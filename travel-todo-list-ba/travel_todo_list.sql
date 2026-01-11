@@ -1,0 +1,44 @@
+DROP database if EXISTS todo;
+create database todo;
+use todo;
+
+-- Users Table
+CREATE TABLE IF NOT EXISTS Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(50) DEFAULT 'user',
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Categories Table
+CREATE TABLE IF NOT EXISTS Categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    color VARCHAR(50) DEFAULT 'blue',
+    description TEXT,
+    userId INT NOT NULL,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES Users(id) ON DELETE CASCADE
+);
+
+-- Tasks Table
+CREATE TABLE IF NOT EXISTS Tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    priority ENUM('Low', 'Medium', 'High') DEFAULT 'Medium',
+    status ENUM('Pending', 'In Progress', 'Completed') DEFAULT 'Pending',
+    dueDate DATE,
+    categoryId INT,
+    remark TEXT,
+    userId INT NOT NULL,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES Users(id) ON DELETE CASCADE,
+    FOREIGN KEY (categoryId) REFERENCES Categories(id) ON DELETE SET NULL
+);
+
+

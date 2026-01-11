@@ -1,0 +1,240 @@
+.app-layout {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+
+	.drag-region {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 32px;
+		z-index: 9999;
+		-webkit-app-region: drag;
+	}
+
+	&-sidebar {
+		width: 290px;
+		height: 100%;
+		background: #f4f7fe;
+		padding: 32px 0 0 0;
+		display: flex;
+		flex-direction: column;
+
+		.project-title {
+			padding: 0 30px;
+			margin-bottom: 15px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			cursor: default;
+
+			.title-icon {
+				color: #3246d2;
+				font-size: 26px;
+				display: flex;
+				filter: drop-shadow(0 4px 6px rgba(50, 70, 210, 0.3));
+				transition: transform 0.3s ease;
+			}
+
+			.title-text {
+				font-weight: 900;
+				font-size: 26px;
+				background: linear-gradient(135deg, #3246d2 0%, #21d4fd 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				letter-spacing: 1px;
+			}
+
+			&:hover .title-icon {
+				transform: rotate(-15deg) scale(1.1);
+			}
+		}
+
+		.menu-container {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 0 20px;
+
+			.menu-item {
+				display: flex;
+				align-items: center;
+				padding: 14px 24px;
+				border-radius: 16px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				color: #a3aed0;
+				font-weight: 500;
+				font-size: 16px;
+
+				.menu-icon {
+					margin-right: 16px;
+					font-size: 20px;
+					display: flex;
+				}
+
+				&:hover {
+					color: #3246d2;
+					background: #f4f7fe;
+				}
+
+				&.active {
+					background: #3246d2;
+					color: #ffffff;
+					box-shadow: 0 10px 20px -5px rgba(50, 70, 210, 0.4);
+				}
+			}
+		}
+
+		.footer-tips {
+			margin-top: auto;
+			padding: 16px 20px;
+
+			.tip-card {
+				background: linear-gradient(135deg, #F4F7FE 0%, #E9EBF8 100%);
+				border-radius: 16px;
+				padding: 12px 16px;
+				color: #2B3674;
+				position: relative;
+				overflow: hidden;
+				box-shadow: none;
+				border: 1px solid rgba(233, 235, 248, 0.8);
+				transition: all 0.3s ease;
+				cursor: default;
+				display: flex;
+				align-items: center;
+				gap: 12px;
+
+				&:hover {
+					transform: translateY(-3px);
+					box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+					border-color: #3246d2;
+				}
+
+				&::before {
+					display: none;
+				}
+
+				.tip-icon {
+					font-size: 18px;
+					margin-bottom: 0;
+					background: #fff;
+					width: 36px;
+					height: 36px;
+					border-radius: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+					flex-shrink: 0;
+					color: #3246d2;
+				}
+
+				.tip-content {
+					position: relative;
+					z-index: 1;
+
+					h4 {
+						margin: 0 0 2px 0;
+						font-size: 12px;
+						font-weight: 700;
+						color: #3246d2;
+					}
+
+					p {
+						margin: 0;
+						font-size: 12px;
+						line-height: 1.4;
+						color: #707EAE;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+
+	&-content {
+		flex: 1;
+		height: 100%;
+		background: #f4f7fe;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-right: 12px;
+		.content-inner {
+			height: 100%;
+			background-color: #fff;
+			border-radius: 24px;
+			padding: 16px;
+
+			.page-top {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				&-left {
+					display: flex;
+					flex-direction: column;
+					gap: 4px;
+
+					.page-title {
+						font-size: 24px;
+						font-weight: 800;
+						color: #1b2559;
+						line-height: 1.2;
+					}
+
+					.page-subtitle {
+						font-size: 14px;
+						color: #a3aed0;
+						font-weight: 500;
+					}
+				}
+				&-right {
+					display: flex;
+					align-items: center;
+					gap: 20px;
+					padding-right: 10px;
+
+					.icon-box {
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background: #fff;
+						border: 1px solid #e6eff5;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+						cursor: pointer;
+						transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+						color: #a3aed0;
+						position: relative;
+
+						&:hover {
+							transform: translateY(-2px);
+							box-shadow: 0 8px 16px rgba(50, 70, 210, 0.15);
+							color: #3246d2;
+						}
+
+						img {
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
+							object-fit: cover;
+							border: 2px solid #fff;
+						}
+					}
+				}
+			}
+
+			.page-content {
+				height: calc(100% - 48px);
+				margin-top: 16px;
+			}
+		}
+	}
+}

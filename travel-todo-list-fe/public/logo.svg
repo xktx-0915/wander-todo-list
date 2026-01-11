@@ -1,0 +1,30 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="tech-gradient" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#4318FF"/>
+<stop offset="100%" stop-color="#00D4FF"/>
+</linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="8" result="blur"/>
+<feComposite in="SourceGraphic" in2="blur" operator="over"/>
+</filter>
+</defs>
+
+<!-- Outer Ring -->
+<circle cx="128" cy="128" r="100" stroke="url(#tech-gradient)" stroke-width="8" stroke-linecap="round" stroke-dasharray="60 180" transform="rotate(-45 128 128)"/>
+<circle cx="128" cy="128" r="100" stroke="url(#tech-gradient)" stroke-width="2" stroke-opacity="0.3"/>
+
+<!-- Inner Hexagon -->
+<path d="M128 68L179.962 98V158L128 188L76.0385 158V98L128 68Z" stroke="url(#tech-gradient)" stroke-width="6" fill="none"/>
+
+<!-- Core Element -->
+<path d="M128 98V158" stroke="url(#tech-gradient)" stroke-width="6" stroke-linecap="round"/>
+<path d="M102 113L154 143" stroke="url(#tech-gradient)" stroke-width="6" stroke-linecap="round"/>
+<path d="M154 113L102 143" stroke="url(#tech-gradient)" stroke-width="6" stroke-linecap="round"/>
+
+<!-- Tech Accents -->
+<circle cx="128" cy="128" r="4" fill="white"/>
+<circle cx="128" cy="48" r="6" fill="#4318FF"/>
+<circle cx="208" cy="128" r="6" fill="#00D4FF"/>
+<circle cx="48" cy="128" r="6" fill="#4318FF"/>
+</svg>
