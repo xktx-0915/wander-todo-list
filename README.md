@@ -23,19 +23,14 @@ WanderList 这是一个基于 **React**、**Redux**、**React Router**、**Antd*
 ## 📸 项目预览
 
 <div align="center">
-  <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/30fd70da4c084500bfc47bfc700e4a66~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5pe25ri4:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTA2MDI5MjE4ODAyMzgxIn0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1768200806&x-orig-sign=aAfrr8PzGHCktXteOnK7qsw2y3I%3D" width="45%" alt="Preview 1" />
-  <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/b942fa6a860e444087d549f2eda17d4a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5pe25ri4:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTA2MDI5MjE4ODAyMzgxIn0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1768200834&x-orig-sign=yvWJN7M04ibl2bLpwWY0h1bfXng%3D" width="45%" alt="Preview 2" />
+  <img src="docs/image1.png" width="45%" alt="Preview 1" />
+  <img src="docs/image2.png" width="45%" alt="Preview 2" />
 </div>
 
 <div align="center">
-  <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/a34a89515b564c019df5dcf7ee0719c9~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5pe25ri4:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTA2MDI5MjE4ODAyMzgxIn0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1768200852&x-orig-sign=QPkMoq%2F2Ep3PQo1SLBLq9cGM%2FaI%3D" width="30%" alt="Preview 3" />
-  <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/c40408f3da6c459b87f7b62f0bfaca6f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5pe25ri4:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTA2MDI5MjE4ODAyMzgxIn0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1768200865&x-orig-sign=OqdIjdc7xedii6eUNcRk3ab7ddg%3D" width="30%" alt="Preview 4" />
-  <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/b965b82234c54be9a360b2b57b6dd597~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5pe25ri4:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTA2MDI5MjE4ODAyMzgxIn0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1768200894&x-orig-sign=d0KBB7VXVYLI5ie882BmAaqkD60%3D" width="30%" alt="Preview 5" />
-</div>
-
-<div align="center">
-  <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/e76c84d253d24593a3d4121e2da9e5eb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5pe25ri4:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTA2MDI5MjE4ODAyMzgxIn0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1768200872&x-orig-sign=KBtUbUpf3y6gfA8QifzKka%2FEMQI%3D" width="45%" alt="Preview 6" />
-  <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/caaa106fe6a64e5f9c8cfdd9860da5e9~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5pe25ri4:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTA2MDI5MjE4ODAyMzgxIn0%3D&rk3s=e9ecf3d6&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1768200906&x-orig-sign=WS9A9AV47WZGh8njvOozRsXgIXc%3D" width="45%" alt="Preview 7" />
+  <img src="docs/image3.png" width="30%" alt="Preview 3" />
+  <img src="docs/image4.png" width="30%" alt="Preview 4" />
+  <img src="docs/image5.png" width="30%" alt="Preview 5" />
 </div>
 
 ## ✨ 功能清单
